@@ -1,0 +1,10 @@
+{
+    "state_covariance_matrix": null,
+    "n_out_of_bounds_trace": null,
+    "mcmc_start_time": "2026-09-15T17:52:45.452140+00:00",
+    "mcmc_end_time": "2026-09-15T17:55:27.869438+00:00",
+    "mcmc_duration": 162.417298,
+    "mcmc_num_divergences": 0,
+    "mcmc_dropped_chains": null,
+    "celeri_version": "0.0.6.post1.dev42+g0a0c9282b.d20260915"
+}
