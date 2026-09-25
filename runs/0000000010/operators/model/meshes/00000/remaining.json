@@ -1,0 +1,9 @@
+{
+    "n_tde": 1388,
+    "n_modes": 50,
+    "n_modes_total": 100,
+    "n_tde_constraints": 130,
+    "coup_idx": null,
+    "ss_slip_idx": null,
+    "ds_slip_idx": null
+}
