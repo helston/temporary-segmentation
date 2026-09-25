@@ -1,0 +1,58 @@
+{
+    "file_name": "/Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/casc_mesh_nm50_ml120000.json",
+    "mesh_filename": "/Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/mccrory2012_30km.msh",
+    "smoothing_weight": 1e+18,
+    "n_modes_strike_slip": 50,
+    "n_modes_dip_slip": 50,
+    "top_slip_rate_constraint": 0,
+    "bottom_slip_rate_constraint": 1,
+    "side_slip_rate_constraint": 0,
+    "top_slip_rate_weight": 100.0,
+    "bottom_slip_rate_weight": 100.0,
+    "side_slip_rate_weight": 100.0,
+    "eigenmode_slip_rate_constraint_weight": 10.0,
+    "top_elastic_constraint_sigma": 0.5,
+    "bottom_elastic_constraint_sigma": 0.5,
+    "side_elastic_constraint_sigma": 0.5,
+    "a_priori_slip_filename": "/Users/hannaelston/Documents/GitHub/celeri/inputs/data/mesh",
+    "coupling_constraints_ss": {
+        "lower": -1.0,
+        "upper": 1.0
+    },
+    "coupling_constraints_ds": {
+        "lower": -1.0,
+        "upper": 1.0
+    },
+    "elastic_constraints_ss": {
+        "lower": null,
+        "upper": null
+    },
+    "elastic_constraints_ds": {
+        "lower": null,
+        "upper": null
+    },
+    "coupling_mean": 0.5,
+    "coupling_mean_parameterization": "constrained",
+    "coupling_sigma": 1.0,
+    "elastic_mean": 0.0,
+    "elastic_mean_parameterization": "unconstrained",
+    "elastic_sigma": 5.0,
+    "softplus_lengthscale": 1.0,
+    "sigmoid_slope": 4.0,
+    "gp_parameterization": "non_centered",
+    "sqp_kinematic_slip_rate_hint_ss": {
+        "lower": -100.0,
+        "upper": 100.0
+    },
+    "sqp_kinematic_slip_rate_hint_ds": {
+        "lower": -100.0,
+        "upper": 100.0
+    },
+    "iterative_coupling_linear_slip_rate_reduction_factor": 0.025,
+    "iterative_coupling_smoothing_length_scale": null,
+    "iterative_coupling_kinematic_slip_regularization_scale": 1.0,
+    "matern_nu": 2.5,
+    "matern_length_scale": 120000.0,
+    "matern_length_units": "absolute",
+    "eigenvector_algorithm": "eigsh"
+}
