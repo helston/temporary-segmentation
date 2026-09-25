@@ -1,0 +1,31 @@
+INFO       | 2026-09-15 16:06:41 | celeri.celeri_util:get_logger:159 | RUN_NAME: 0000000061
+INFO       | 2026-09-15 16:06:41 | celeri.celeri_util:get_logger:160 | Write log file: /Users/hannaelston/Documents/GitHub/celeri/runs/0000000061/0000000061.log
+WARNING    | 2026-09-15 16:06:41 | celeri.cli:process_args:332 | ORIGINAL: config.block_file_name: /Users/hannaelston/Documents/GitHub/celeri/inputs/block/SEG_block.csv
+WARNING    | 2026-09-15 16:06:42 | celeri.cli:process_args:334 | REPLACED: config.block_file_name: /Users/hannaelston/Documents/GitHub/celeri/inputs/block/YKS_B_block.csv
+WARNING    | 2026-09-15 16:06:42 | celeri.cli:process_args:332 | ORIGINAL: config.segment_file_name: /Users/hannaelston/Documents/GitHub/celeri/inputs/segment/SEG_segment.csv
+WARNING    | 2026-09-15 16:06:42 | celeri.cli:process_args:334 | REPLACED: config.segment_file_name: /Users/hannaelston/Documents/GitHub/celeri/inputs/segment/YKS_2_segment.csv
+INFO       | 2026-09-15 16:06:42 | celeri.model:read_data:123 | Reading data files
+SUCCESS    | 2026-09-15 16:06:42 | celeri.model:read_data:140 | Read: /Users/hannaelston/Documents/GitHub/celeri/inputs/segment/YKS_2_segment.csv
+SUCCESS    | 2026-09-15 16:06:42 | celeri.model:read_data:145 | Read: /Users/hannaelston/Documents/GitHub/celeri/inputs/block/YKS_B_block.csv
+INFO       | 2026-09-15 16:06:42 | celeri.mesh:_log_eigenvalue_truncation:909 | Eigenvalue truncation: 99.97% of prior variance captured by 50 modes (N(90.0%)=5, N(95.0%)=8, N(99.0%)=15, N(99.9%)=34)
+INFO       | 2026-09-15 16:06:42 | celeri.mesh:_log_eigenvalue_truncation:937 | Rough min length scale for 50 modes (m): ℓ(90.0%)≈7.6e+04m, ℓ(95.0%)≈8.7e+04m, ℓ(99.0%)≈1.2e+05m, ℓ(99.9%)≈1.9e+05m
+SUCCESS    | 2026-09-15 16:06:42 | celeri.mesh:from_params:1266 | Read: /Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/mccrory2012_30km.msh
+SUCCESS    | 2026-09-15 16:06:42 | celeri.model:read_data:153 | Read: /Users/hannaelston/Documents/GitHub/celeri/inputs/station/casc_panga_offshore_sta_data.csv
+INFO       | 2026-09-15 16:06:42 | celeri.model:read_data:169 | No mogi_file_name
+INFO       | 2026-09-15 16:06:42 | celeri.model:read_data:192 | No sar_file_name
+INFO       | 2026-09-15 16:06:43 | celeri.model:assign_block_labels:532 | Closed blocks: 49, equal to block file blocks: 49
+INFO       | 2026-09-15 16:06:43 | celeri.model:assign_block_labels:537 | Testing for existence of interior points
+INFO       | 2026-09-15 16:06:44 | celeri.scripts.celeri_solve:main:46 | MCMC solve
+INFO       | 2026-09-15 16:06:44 | celeri.solve_mcmc:solve_mcmc:1729 | Building operators with streaming mode (discard_tde_to_velocities=True)
+INFO       | 2026-09-15 16:06:45 | celeri.operators:_store_elastic_operators:1619 | Cache: /Users/hannaelston/Documents/GitHub/celeri/inputs/operators/c44c8448864321f0.hdf5
+INFO       | 2026-09-15 16:06:45 | celeri.operators:_store_elastic_operators:1626 | Found cached elastic operators at /Users/hannaelston/Documents/GitHub/celeri/inputs/operators/c44c8448864321f0.hdf5
+INFO       | 2026-09-15 16:06:45 | celeri.operators:_store_elastic_operators:1654 | Segments have been added or removed since last computation. Recomputing operators.
+INFO       | 2026-09-15 16:06:59 | celeri.operators:_store_eigenvectors_to_tde_slip:2830 | Start: Eigenvectors to TDE slip for mesh: /Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/mccrory2012_30km.msh
+SUCCESS    | 2026-09-15 16:06:59 | celeri.operators:_store_eigenvectors_to_tde_slip:2854 | Finish: Eigenvectors to TDE slip for mesh: /Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/mccrory2012_30km.msh
+INFO       | 2026-09-15 16:06:59 | celeri.operators:_compute_eigen_to_velocities:3029 | Computing eigen_to_velocities for mesh: /Users/hannaelston/Documents/GitHub/celeri/inputs/mesh/mccrory2012_30km.msh
+INFO       | 2026-09-15 16:07:02 | celeri.operators:_store_block_moment_tensors:873 | Computing block moment tensors and areas
+SUCCESS    | 2026-09-15 16:07:02 | celeri.operators:_store_block_moment_tensors:917 | Computed moment tensors for 49 blocks
+INFO       | 2026-09-15 16:07:02 | celeri.solve_mcmc:_add_station_velocity_likelihood:1340 | Using unweighted station likelihood (2231 stations)
+INFO       | 2026-09-15 16:10:09 | celeri.solve_mcmc:solve_mcmc:1787 | Computing pointwise log-likelihoods for ['station_velocity']
+SUCCESS    | 2026-09-15 16:10:11 | celeri.mesh:to_disk:1291 | Mesh configuration saved to /Users/hannaelston/Documents/GitHub/celeri/runs/0000000061/operators/model/meshes/00000
+SUCCESS    | 2026-09-15 16:10:11 | celeri.model:to_disk:79 | Model saved to /Users/hannaelston/Documents/GitHub/celeri/runs/0000000061/operators/model
