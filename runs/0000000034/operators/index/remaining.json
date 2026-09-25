@@ -1,0 +1,23 @@
+{
+    "n_blocks": 48,
+    "n_segments": 1627,
+    "n_stations": 2231,
+    "n_meshes": 1,
+    "n_mogis": 0,
+    "n_block_constraints": 1,
+    "start_station_row": 0,
+    "end_station_row": 6693,
+    "start_block_col": 0,
+    "end_block_col": 144,
+    "start_block_constraints_row": 6693,
+    "end_block_constraints_row": 6696,
+    "n_slip_rate_constraints": 20,
+    "start_slip_rate_constraints_row": 6696,
+    "end_slip_rate_constraints_row": 6716,
+    "n_strain_blocks": 0,
+    "n_block_strain_components": 0,
+    "start_block_strain_col": 244,
+    "end_block_strain_col": 244,
+    "start_mogi_col": 244,
+    "end_mogi_col": 244
+}
